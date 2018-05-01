@@ -8,8 +8,4 @@ public interface UserService {
     User findById(int id);
 
     User findByName(String name);
-
-    User save(User user);
-
-    User update(User user);
 }
