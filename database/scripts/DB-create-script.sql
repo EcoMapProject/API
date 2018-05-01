@@ -16,3 +16,14 @@ create table user_roles(
     primary key (username));
 
 create unique index user_role_id on user_roles (username, role);
+
+-- BINS TABLE
+
+create table bins
+    (id serial not null,
+    name varchar(50) not null,
+    address varchar(50),
+    description varchar(500),
+    latitude varchar(50) not null,
+    longitude varchar(50) not null,
+    primary key (id));;
