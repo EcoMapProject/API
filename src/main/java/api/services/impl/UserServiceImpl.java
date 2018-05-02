@@ -21,18 +21,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User save(User user) {
-        return users.save(user);
-    }
-
-    @Override
     public User findById(int id) {
         return users.findById(id);
-    }
-
-    @Override
-    public User update(User user) {
-        return users.save(user);
     }
 
     @Override
