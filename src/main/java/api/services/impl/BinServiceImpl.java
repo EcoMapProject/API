@@ -8,6 +8,8 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class BinServiceImpl implements BinService {
@@ -26,7 +28,7 @@ public class BinServiceImpl implements BinService {
     }
 
     @Override
-    public Iterable<Bin> findAll() {
+    public List<Bin> findAll() {
         return bins.findAll();
     }
 
