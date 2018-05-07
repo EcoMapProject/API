@@ -2,8 +2,10 @@ package api.services;
 
 import api.entities.Bin;
 
+import java.util.List;
+
 public interface BinService {
-    Iterable<Bin> findAll();
+    List<Bin> findAll();
 
     Bin findById(int id);
 

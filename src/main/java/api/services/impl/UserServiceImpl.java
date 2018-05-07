@@ -8,6 +8,8 @@ import api.entities.User;
 import api.repositories.UserRepository;
 import api.services.UserService;
 
+import java.util.List;
+
 @Service
 @Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class UserServiceImpl implements UserService {
@@ -26,7 +28,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Iterable<User> findAll() {
+    public List<User> findAll() {
         return users.findAll();
     }
 
