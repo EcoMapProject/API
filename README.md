@@ -22,14 +22,14 @@ Further create database schema with scripts in directory ./database/scripts.
 
 
 Then you have to clone the git repository. Type in command line:\
-'''{r, engine='bash', count_lines}
+```
 git clone https://github.com/EcoMapProject/API
-'''
+```
 
 
 Now you can build the program with Maven and run it:\
-'''{r, engine='bash', count_lines}
+```
 cd ./API # (Go to root directory of the cloned project)\
 mvn package\
 java -jar api-1.0-SNAPSHOT.jar
-'''
+```
