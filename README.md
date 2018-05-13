@@ -1,10 +1,10 @@
-#EcoMap API
+# EcoMap API
 
 Hi!\
 This project is the back-end part of EcoMap.\
 It's a guide how to build, to deploy, to use this project in order to run the EcoMap back-end on your local computer.
 
-##Building and Deployment
+## Building and Deployment
 
 Prerequisite software:
 
@@ -22,10 +22,14 @@ Further create database schema with scripts in directory ./database/scripts.
 
 
 Then you have to clone the git repository. Type in command line:\
+'''{r, engine='bash', count_lines}
 git clone https://github.com/EcoMapProject/API
+'''
 
 
 Now you can build the program with Maven and run it:\
+'''{r, engine='bash', count_lines}
 cd ./API # (Go to root directory of the cloned project)\
 mvn package\
 java -jar api-1.0-SNAPSHOT.jar
+'''
